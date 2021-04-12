@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{title}}</title>
+	<link rel="stylesheet" type="text/css" href="{% static "css/styles.css" %}">
+	{% include "snippets/css.html" %}
+</head>
+<body>
+	{% include "snippets/navbar.html" %}
+	<img id="banner" src="{% static 'img/home.jpeg' %}" alt="Home">
+	
+	{% block list %}
+		
+	{% endblock list %}
+
+
+	<h1>{{subTitle}}</h1>
+	{% block content %}
+		
+	{% endblock content %}
+</body>
+</html>

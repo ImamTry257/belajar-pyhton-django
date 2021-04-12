@@ -1,0 +1,16 @@
+#banner{
+	width: 100%
+}
+
+nav{
+	color: #555;
+	font-family: arial;
+}
+
+nav ul{
+	background-color: #555;
+	list-style-type: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}

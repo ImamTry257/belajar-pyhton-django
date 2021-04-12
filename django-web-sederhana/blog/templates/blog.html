@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{Title}}</title>
+	{% include "snippets/css.html" %}
+</head>
+<body>
+	{% include "navbar.html" %}
+	<img src="{% static 'blog/img/blog.jpeg' %}" style="width: 100%">
+	{% block list %}
+		
+	{% endblock list %}
+	<h1>Selamat Data</h1>
+	
+	{% block content %}
+		
+	{% endblock content %}
+</body>
+</html>
