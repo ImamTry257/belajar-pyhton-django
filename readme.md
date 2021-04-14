@@ -6,3 +6,15 @@
 6. django-admin startproject namaproject -> create project django
 7. python3 manage.py runserver -> aktifkan serve django framework
 8. python3 manage.py startapp namaApp nya -> buat app
+
+# for migrate db
+python3 manage.py migrate
+pyhton3 managempy createsuperuser
+-> url admin backoffice
+
+install xampp
+sudo apt-get install libmysqlclient-dev
+
+# how ro run local xampp using terminal
+cd /opt/lampp/bin
+./mysql -u root
