@@ -9,12 +9,22 @@
 
 # for migrate db
 python3 manage.py migrate
-pyhton3 managempy createsuperuser
+pyhton3 manage.py createsuperuser
 -> url admin backoffice
 
 install xampp
 sudo apt-get install libmysqlclient-dev
 
+install module mysql at django
+pip install pymysql
+add :
+import pymysql
+
+pymysql.install_as_MySQLdb()
+
 # how ro run local xampp using terminal
 cd /opt/lampp/bin
 ./mysql -u root
+
+check status -> status
+copy UNIX socket ke setting your project -> change localhost to /opt/lampp/var/mysql/mysql.sock
