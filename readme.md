@@ -1,4 +1,5 @@
 1. pyhton3 -m venv Env -> membuat virtual enviroment
+    atau -> virtualenv env --no-site-packages
 2. pip install --upgrade pip
 3. pip install Django==3.2
 4. source Env/bin/activate -> masuk ke virtual enviroment
@@ -28,3 +29,21 @@ cd /opt/lampp/bin
 
 check status -> status
 copy UNIX socket ke setting your project -> change localhost to /opt/lampp/var/mysql/mysql.sock
+
+
+# how to migrate models to db
+1. create model and fixing field
+2. python3 manage.py makemigrations
+3. pyhton3 manage.py migrate
+
+
+# how to check data in DB
+1. login to db using shell python -> pyhton3 manage.py shell
+2. import your models -> from todo.models import Todo , Todo is your modelname
+3. Todo.objects.all() -> getting all data
+
+
+# how to register model to admin sistem
+1. at models.py -> import your models -> from .models import Post
+2. then -> admin.site.register(yourclassname) -> admin.site.register(Post) 
+3. then -> access your website
