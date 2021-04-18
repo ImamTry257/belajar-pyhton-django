@@ -41,6 +41,20 @@ copy UNIX socket ke setting your project -> change localhost to /opt/lampp/var/m
 1. login to db using shell python -> pyhton3 manage.py shell
 2. import your models -> from todo.models import Todo , Todo is your modelname
 3. Todo.objects.all() -> getting all data
+4. Todo.objects.create(nameField = "your data")
+5. delete data using filter -> Todo.objects.all()[yourdataIndex].delete()
+6. update -> Todo1 = Todo.object.all()[1]
+    Todo1.nameField = "your entrie"
+    Todo1.save()
+7. Get one data
+    allPosts = Posts.objects.all()
+    allPosts.get(id="2")
+8. Eks Filter
+    allPosts = Posts.objects.all()
+    allPosts.filter(id="blog")
+9. Eks Filter
+    allPosts = Posts.objects.all()
+    allPosts.exclude(id="blog")
 
 
 # how to register model to admin sistem

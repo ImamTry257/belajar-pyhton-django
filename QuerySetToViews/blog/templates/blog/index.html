@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ Title }}</title>
+</head>
+<body>
+	<li><a href="index">Blog</a></li>
+	<li><a href="jurnal">Jurnal</a></li>
+	<li><a href="berita">Berita</a></li>
+	<li><a href="gosip">Gosip</a></li>
+
+	<h1>{{ Heading }}</h1>
+
+	{% for post in Posts %}
+		<h3>{{post.judul}}</h3>
+		<h6>{{post.post_date}}</h6>
+		<p>{{post.body}}</p>
+		<small>{{post.category}}</small>
+	{% endfor %}
+	
+	<br><br>
+</body>
+</html>
